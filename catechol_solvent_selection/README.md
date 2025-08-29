@@ -13,7 +13,7 @@ To test this functionality, install the requirements using:
 ```bash
 pip install -r SoDaDE_requirements.txt
 ```
-
+We recommend using a python environment for installation. In this case, conda environments were used. There were no dependecy issues raised at the time of writing this, August 2025.
 ### The relevant additions to the code base are the following:
 -`fine_tune.py`: This file finetunes the SoDaDE model on a selected dataset through the `SoDaDE_regression.py` file. The full data task is pre-set but can be changed to the 'single solvent' task easily. Optimal parameters are present and it saved a .csv of the results in the `results` directory. The folder the .csv is saved into differs according to the task `full_data` or `single_solvent` and whether the SoDaDE model was frozen during finetuning `decoderFalse` (SoDaDE learning happened) or `decoderTrue` (SoDaDE model weights were frozen).
 
